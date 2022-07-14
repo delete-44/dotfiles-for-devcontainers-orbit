@@ -13,6 +13,12 @@ ZSH_THEME="spaceship"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-syntax-highlighting)
 
+SPACESHIP_PROMPT_ORDER=(
+  dir           # Current directory section
+  git           # Git section (git_branch + git_status)
+  char          # Prompt character
+)
+
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
